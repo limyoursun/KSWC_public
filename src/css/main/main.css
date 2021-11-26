@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+.main>div{margin-bottom:20px;}
+.more{display:inline-block;align-self:center;width:16px;height:16px;text-indent:-9999px;background:url(../../images/main/icon_visualBox_more.png) no-repeat center; transition:all 0.3s ease;}
+.more:hover{ transform:rotate(90deg);}
+#container.main{padding:40px 0;background-color:#ecf0f7;}
+.boardList{width:413px;background-color:#fff;border-radius:5px;border:1px solid #dce6eb;box-shadow: 0px 4px 13px 0 rgba(48, 48, 48, 0.03);}
+.boardList1>div:first-child{padding:0 20px 0 30px;border:1px solid #dce6eb;border-width:0 0 1px;}
+.boardList1 h3{font-size:18px;font-weight:600;color:#000;line-height:60px;}
+.boardList1>div:first-child i{font-size:23px;color:#000;line-height:60px;}
+.boardList1>div:last-child{padding:0 26px;border:1px solid #dce6eb;border-top-width:0;}
+.boardList1 ul{padding:20px 0 30px;border-top:1px solid #e3e3e3;}
+.boardList1 ul>li{position:relative;padding-left:10px;line-height:34px;}
+.boardList1 ul>li::before{position:absolute;top:0;left:0;content:'·';}
+.boardList1 li a{display:flex;justify-content:space-between;font-size:16px;}
+.boardList1 li a span:first-child{display:inline-block;width:170px;font-size:15px;color:#777;overflow:hidden;text-overflow:ellipsis;white-space:pre;}
+.boardList1 li a span:last-child{font-size:14px;color:#999;}
+.boardList1 li:hover a span{color:#397fd5;}
+.mainNotice{padding:25px 0;}
+.mainNotice img{width:66px;height:66px;margin-right:20px;}
+.mainNotice b{display:block;margin-bottom:7px;font-size:16px;}
+.mainNotice p{font-size:15px;color:#7c7c7c;line-height:22px;word-break:keep-all;}
+.boardList1 .btnRegistration{text-align:center;margin-bottom:25px;}
+.boardList1 .btnRegistration button{width:160px;height:45px;font-size:15px;font-family:'NanumSquareB';font-weight:bold;color:#fff;background-color:#009c93;border:none;border-radius:3px;transition:0.3s;}
+.boardList1 .btnRegistration button:hover{background-color:#007973;}
+.boardList2{padding:8px 10px;}
+.boardList2 .tab a{display:flex;justify-content:center;align-items:center;height:55px;font-size:15px;color:#fff;line-height:16px;text-align:center;background-color:#a2aebf;border:1px solid #d3d3d3;border-right:none;}
+.boardList2 .tab li:last-child a{border-right-width:1px;}
+.boardList2 .tab .on{font-weight:bold;color:#fff;background-color:#2669ae;border-color:transparent;}
+.boardList2 .boxTab ul{display:flex;overflow:hidden;border-radius:3px;}
+.boardList2 .tabConts{padding:15px 10px;text-align:center;}
+.boardList2 .tabCont{width:376px;height:300px;}
+.boardList3{margin-right:0;}
+.boardList3>div:first-child{padding:0 20px 0 25px;border:1px solid #dce6eb;border-width:0 0 1px;}
+.boardList3 h3{height:59px;font-size:18px;font-weight:600;color:#000;line-height:62px;}
+.boardList3>div:first-child i{font-size:23px;color:#000;line-height:60px;}
+.boardList3>div:last-child{padding:23px;}
+.boardList3 table thead{background-color:#4eb9c9;}
+.boardList3 tbody th{padding:32px 0;}
+.boardList3 .level::before{content:'';display:block;width:30px;height:30px;margin:0 auto 3px;background-image:url(../../images/main/icon_warninglevel.png);background-repeat:no-repeat;}
+.boardList3 .level.r::before{background-position-y:0;}
+.boardList3 .level.s::before{background-position-y:50%;}
+.boardList3 .level.g::before{background-position-y:100%;}
+.analysisList{width:413px;background-color:#fff;box-shadow: 0px 4px 13px 0 rgba(48, 48, 48, 0.03);}
+.analysisList>div:first-child{padding:0 20px 0 25px;border:1px solid #dce6eb;border-width:0 0 1px;}
+.analysisList h3{height:59px;font-size:18px;font-weight:600;color:#555;line-height:62px;letter-spacing:-0.45px;}
+.analysisList>div:first-child i{font-size:23px;color:#000;line-height:60px;}
+.analysisList>div:last-child{padding:23px;}
+.analysisList table thead{background-color:#90c31f;}
+.analysisList tbody th{padding:13px 0;}
+.noticeList{box-shadow: 0px 4px 13px 0 rgba(48, 48, 48, 0.03);}
+.noticeList1{width:510px;background-color:#fff;}
+.noticeList1>div:first-child{padding:0 20px 0 30px;border:1px solid #dce6eb;border-width:0 0 1px;}
+.noticeList1 h3{font-size:18px;font-weight:600;color:#555;line-height:60px;}
+.noticeList1>div:first-child i{font-size:23px;color:#000;line-height:60px;}
+.noticeList1>div:last-child{padding:0 25px;}
+.noticeList1 ul{padding:20px 0 23px;}
+.noticeList1 ul>li{position:relative;padding-left:10px;line-height:32px;}
+.noticeList1 ul>li::before{position:absolute;top:0;left:0;content:'·';}
+.noticeList1 li a{display:flex;justify-content:space-between;font-size:16px;}
+.noticeList1 li a span:first-child{display:inline-block;width:300px;font-size:15px;color:#777;overflow:hidden;text-overflow:ellipsis;white-space:pre;}
+.noticeList1 li a span:last-child{font-size:14px;color:#999;}
+.noticeList1 li:hover a span{color:#397fd5;}
+.noticeList2{width:750px;}
+.noticeList2 h3{padding-left:20px;}
+.noticeList2>div>div{position:relative;width:33.3%;height:200px;background-color:#fff;border:1px solid #dce6eb;border-right:none;}
+.noticeList2>div>div:first-child,
+.noticeList2>div>div:nth-child(2){width:250px;background-image:url(../../images/main/icon_shorthand.png);background-repeat:no-repeat;}
+.noticeList2>div>div:first-child{background-position:top center;}
+.noticeList2>div>div:first-child:hover,
+.noticeList2>div>div:nth-child(2):hover{background-image:url(../../images/main/icon_on_shorthand.png);}
+.noticeList2>div>div:nth-child(2){background-position:bottom center;}
+.noticeList2>div>div a{display:block;width:100%;height:100%;}
+.noticeList2>div>div p{display:block;position:absolute;bottom:30px;width:100%;font-size:15px;text-align:center;}
+.noticeList2>div>div:last-child{border-right:1px solid #dce6eb;border-top:1px solid #4095a9;border-radius:0 5px 0 0;overflow:hidden;}
+.noticeList2 h3{height:55px;color:#fff;background-color:#4095a9;line-height:55px;}
+.noticeList2 .contactInfo{padding:12px;}
+.noticeList2 .contactInfo dl{line-height:40px;}
+.noticeList2 .contactInfo dt,
+.noticeList2 .contactInfo dd{display:inline-block;font-size:15px;}
+.noticeList2 .contactInfo dt::before{display:inline-block;position:relative;top:-3px;content:'';width:3px;height:3px;margin-right:6px;background-color:#4eb9c9;border-radius:20px;}
+.noticeList2 .contactInfo dt{margin-right:3px;}
