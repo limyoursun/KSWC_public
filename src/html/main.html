@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0, user-scalable=yes">
+  <title>우주전파센터 재난대응시스템</title>
+  <link rel="stylesheet" type="text/css" href="../css/font.css">
+  <link rel="stylesheet" type="text/css" href="../css/base.css">
+  <script src="../js/main/jquery.js"></script>
+  <script src="../js/main/jquery-ui.min.js"></script>
+  <script src="../js/main/main.js"></script>
+</head>
+
+<body>
+  <!-- skip nav -->
+  <ul id="skipNav">
+    <li><a href="#gnb">주메뉴 바로가기</a></li>
+    <li><a href="#container">본문 바로가기</a></li>
+  </ul>
+  <!--// skip nav -->
+  <div id="wrap">
+    <!-- header -->
+    <div id="header">
+      <div class="headerTop">
+        <div class="inner">
+          <a href="#" title="새창열림" target="_blank" class="blankPage">우주전파센터</a>
+          <a href="#" title="새창열림" target="_blank" class="blankPage">우주전파재난 AI경진대회</a>
+          <ul class="other">
+            <li><a href="#">마이페이지</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="headerBottom">
+        <div class="inner flexWrap fSb">
+          <h1><a href="#"><img src="./../images/main/img_logo.png" alt="우주전파센터 재난대응시스템"></a></h1>
+          <div class="stateWrap">
+            <h2>우주전파재난 <b>위기경보</b></h2>
+            <ul class=" flexWrap">
+              <!-- 해당 li에 class name "on" 추가시 불이 켜짐 -->
+              <li class="on"><b>정상</b></li>
+              <li class="on"><b>관심</b></li>
+              <li class="on"><b>주의</b></li>
+              <li class="on"><b>경계</b></li>
+              <li class="on"><b>심각</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// header -->
+    <!-- container -->
+    <div id="container" class="main">
+      <!-- boardBox -->
+      <div class="boardBox">
+        <div class="inner flexWrap fSb">
+          <div class="boardList boardList1">
+            <div class="flexWrap fSb">
+              <h3>피해접수 현황</h3>
+              <a href="#" class="more">더보기</a>
+            </div>
+            <div>
+              <div class="mainNotice flexWrap fSb">
+                <img src="../images/main/icon_notice.png" alt="확성기 모양 아이콘">
+                <div>
+                  <b>A 항공 피해발생건 10월 15일(금)</b>
+                  <p>2021.10.15일 발생한 A 항공 피해상황 관련 내용입니다.</p>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  <a href="#" class="btnRegistrationList">
+                    <span>클릭하시면 피해등록내역을 보실 수 있습니다.</span>
+                    <span>2020.06.30</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>전력 피해발생에 관한 건</span>
+                    <span>2020.06.30</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>C항공사 피해발생에 관한 건</span>
+                    <span>2020.06.30</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="btnRegistration">
+                <button type="button" class="btnRegistrationDamage">피해사례 등록</button>
+              </div>
+            </div>
+          </div>
+          <div class="boardList boardList2">
+            <div class="tab boxTab">
+              <ul class="tabList">
+                <li class="w55"><a href="#tab01" class="on">Xray</a></li>
+                <li class="w65"><a href="#tab02">Proton</a></li>
+                <li class="w85"><a href="#tab03">Kp-Index</a></li>
+                <li class="w85"><a href="#tab04">The Sun<br>(EUV)</a></li>
+                <li class="w115"><a href="#tab05">Coronal Mass<br>Ejections</a></li>
+              </ul>
+            </div>
+            <div class="tabConts">
+              <div id="tab01" class="tabCont" style="">
+                <img src="../images/main/img_xray.png" alt="Xray 임시 이미지">
+              </div>
+              <div id="tab02" class="tabCont" style="display: none;">
+                <img src="http://placehold.it/376x300" alt="Proton 임시 이미지">
+              </div>
+              <div id="tab03" class="tabCont" style="display: none;">
+                <img src="http://placehold.it/376x300" alt="Kp-Index 임시 이미지">
+              </div>
+              <div id="tab04" class="tabCont" style="display: none;">
+                <img src="http://placehold.it/376x300" alt="The Sun(EUV) 임시 이미지">
+              </div>
+              <div id="tab05" class="tabCont" style="display: none;">
+                <img src="http://placehold.it/376x300" alt="Coronal Mass Ejections 임시 이미지">
+              </div>
+            </div>
+          </div>
+          <div class="boardList boardList3">
+            <div class="flexWrap fSb">
+              <h3>경보 등급</h3>
+              <a href="#" class="more">더보기</a>
+            </div>
+            <div>
+              <table>
+                <caption>경보 등급</caption>
+                <colgroup>
+                  <col style="width:114px;">
+                  <col>
+                  <col>
+                  <col>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>상황</th>
+                    <th>-48hr</th>
+                    <th>-24hr</th>
+                    <th>현재</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>태양흑점폭발</th>
+                    <td>
+                      <div class="level r">R0</div>
+                    </td>
+                    <td>
+                      <div class="level r">R0</div>
+                    </td>
+                    <td>
+                      <div class="level r">R0</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>태양입자유입</th>
+                    <td>
+                      <div class="level s">S0</div>
+                    </td>
+                    <td>
+                      <div class="level s">S0</div>
+                    </td>
+                    <td>
+                      <div class="level s">S0</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>태양흑점폭발</th>
+                    <td>
+                      <div class="level g">G0</div>
+                    </td>
+                    <td>
+                      <div class="level g">G0</div>
+                    </td>
+                    <td>
+                      <div class="level g">G0</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--// boardBox -->
+      <!-- analysisBox -->
+      <div class="analysisBox">
+        <div class="inner flexWrap fSb">
+          <div class="analysisList analysisList1">
+            <div>
+              <h3>태양흑점폭발</h3>
+            </div>
+            <div>
+              <table>
+                <caption>태양흑점폭발</caption>
+                <colgroup>
+                  <col style="width:76px;">
+                  <col>
+                  <col>
+                  <col>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>0-24hr</th>
+                    <th>24-48hr</th>
+                    <th>48-72hr</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>R1–R2</th>
+                    <td>1%</td>
+                    <td>1%</td>
+                    <td>1%</td>
+                  </tr>
+                  <tr>
+                    <th>R3 이상</th>
+                    <td>1%</td>
+                    <td>1%</td>
+                    <td>1%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="analysisList analysisList2">
+            <div>
+              <h3>태양입자유입</h3>
+            </div>
+            <div>
+              <table>
+                <caption>태양입자유입</caption>
+                <colgroup>
+                  <col style="width:76px;">
+                  <col>
+                  <col>
+                  <col>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>0-24hr</th>
+                    <th>24-48hr</th>
+                    <th>48-72hr</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>S1–S2</th>
+                    <td>1%</td>
+                    <td>1%</td>
+                    <td>1%</td>
+                  </tr>
+                  <tr>
+                    <th>S3 이상</th>
+                    <td>1%</td>
+                    <td>1%</td>
+                    <td>1%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="analysisList analysisList3">
+            <div>
+              <h3>지자기교란</h3>
+            </div>
+            <div>
+              <table>
+                <caption>지자기교란</caption>
+                <colgroup>
+                  <col style="width:76px;">
+                  <col>
+                  <col>
+                  <col>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>0-24hr</th>
+                    <th>24-48hr</th>
+                    <th>48-72hr</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>G1–G2</th>
+                    <td>1%</td>
+                    <td>1%</td>
+                    <td>1%</td>
+                  </tr>
+                  <tr>
+                    <th>G3 이상</th>
+                    <td>1%</td>
+                    <td>1%</td>
+                    <td>1%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- analysisBox end -->
+      <!-- noticeBox -->
+      <div class="noticeBox">
+        <div class="inner flexWrap fSb">
+          <div class="noticeList noticeList1">
+            <div class="flexWrap fSb">
+              <h3>예·경보 및 재난알림</h3>
+              <a href="#" class="more">더보기</a>
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <a href="#">
+                    <span>태양입자유입 1단계 경보상황 발생 및 해제 알림</span>
+                    <span>2020.11.30</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>태양입자유입 1단계 경보상황 발생 및 해제 알림</span>
+                    <span>2020.11.30</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>태양입자유입 1단계 경보상황 발생 및 해제 알림</span>
+                    <span>2020.11.30</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="noticeList noticeList2">
+            <div class="flexWrap fSb">
+              <div>
+                <a href="#">
+                  <p><b class="fontMint">국민행동요령</b> 바로가기</p>
+                </a>
+              </div>
+              <div>
+                <a href="#">
+                  <p><b class="fontOrange">예경보 알림서비스</b> 신청&sol;해지</p>
+                </a>
+              </div>
+              <div>
+                <h3>상황실 연락처</h3>
+                <div class="contactInfo">
+                  <dl>
+                    <dt>전&nbsp;&nbsp;&nbsp;화</dt>
+                    <dd>
+                      <a href="tel:064-797-7060" class="fontBlue"><b>064-797-7060~3</b></a>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>팩&nbsp;&nbsp;&nbsp;스</dt>
+                    <dd>064-797-7059</dd>
+                  </dl>
+                  <dl>
+                    <dt>이메일</dt>
+                    <dd><a href="mailto:spaceweather@korea.kr">spaceweather@korea.kr</a></dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--// noticeBox -->
+    </div>
+    <!--// container -->
+    <!-- footer -->
+    <div id="footer">
+      <div class="inner">
+        <img src="./../images/main/img_footerLogo.png" alt="과학기술정보부 국립전파연구원 우주전파센터">
+        <ul>
+          <li><a href="#" class="active">개인정보처리방침</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">이메일무단수집거부</a></li>
+        </ul>
+        <select title="기관선택">
+          <option>기관바로가기</option>
+        </select>
+        <div>
+          <span>63025 제주시 한림읍 귀덕로 198-6</span>/
+          <span>대표전화: 064-797-7011</span>/
+          <span>예보관련 문의: 064-797-7049</span>/
+          <span>이메일: spaceweather@korea.kr</span>
+        </div>
+        <p>Copyright © Korean Space Weather Center. All rights reserved.</p>
+      </div>
+    </div>
+    <!--// footer -->
+
+    <!-- pop -->
+    <div class="popOverlay">
+      <div class="popArea RegistrationDamage">
+        <div class="popWrap">
+          <div class="popTit">
+            <h1>피해접수 등록</h1>
+            <button type="button" class="btnClose"></button>
+          </div>
+          <div class="popBody">
+            <div class="popCont">
+              <div>
+                <h2>피해접수 등록</h2>
+                <div>
+                  <div class="tblPop">
+                    <table class="tblView">
+                      <caption>피해접수 등록</caption>
+                      <colgroup>
+                        <col style="width:30%;">
+                        <col style="width:70%;">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope="row">
+                            <label for="title">제목</label>
+                          </th>
+                          <td>
+                            <input id="title" type="text">
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <label for="type">유형</label>
+                          </th>
+                          <td>
+                            <select id="type">
+                              <option value="전체">전체</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <label for="department">기관명</label>
+                          </th>
+                          <td>
+                            <input id="department" type="text" disabled>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <label for="name">담당자 성함</label>
+                          </th>
+                          <td>
+                            <input id="name" type="text" disabled>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <label for="contents">내용</label>
+                          </th>
+                          <td>
+                            <textarea id="contents">항만 레이터 통신 장애가 발생하여….</textarea>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <label title="file">첨부파일</label>
+                          </th>
+                          <td>
+                            <div class="fileBox">
+                              <input class="uploadName" title="addFile" value="파일 첨부" disabled="disabled">
+                              <label for="exFilename" class="btn btnSkyblue">업로드</label>
+                              <input type="file" id="exFilename" class="uploadHidden">
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="btnWrap">
+                      <button type="button" class="btn btnBlue">등록</button>
+                      <button type="button" class="btn btnGray">닫기</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popOverlay">
+      <div class="popArea RegistrationList">
+        <div class="popWrap">
+          <div class="popTit">
+            <h1>피해접수 등록 내역</h1>
+            <button type="button" class="btnClose"></button>
+          </div>
+          <div class="popBody">
+            <div class="popCont">
+              <div>
+                <h2>피해접수 등록 내역</h2>
+                <div>
+                  <div class="tblPop">
+                    <table class="tblView">
+                      <caption>피해접수 등록 내역</caption>
+                      <colgroup>
+                        <col style="width:30%;">
+                        <col style="width:70%;">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th scope="row">
+                            <label for="title">제목</label>
+                          </th>
+                          <td>
+                            <span>A항공 피해발생</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <label title="type">유형</label>
+                          </th>
+                          <td>
+                            <span>GPS 장애</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <label for="department">기관명</label>
+                          </th>
+                          <td>
+                            <span>대한항공</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <label for="name">담당자 성함</label>
+                          </th>
+                          <td>
+                            <span>김OO (010-0000-0000)</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <label for="contents">내용</label>
+                          </th>
+                          <td>
+                            <span>
+                              o 총 2편의 미국→한국 항공기 북극항로 우회<br>① KE 0921(시애틀→인천) : 비행시간 2시간 증가<br>② KE515(캐나다→한국) : 비행시간 3시간
+                              증가
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <label title="file">첨부파일</label>
+                          </th>
+                          <td>
+                            <span class="flieDownload">
+                              <a href="#" class="btnFile">현장 이미지.jpg</a>
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="btnWrap">
+                      <button type="button" class="btn btnBlue">수정</button>
+                      <button type="button" class="btn btnGray">삭제</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--// pop -->
+  </div>
+</body>
+
+</html>
