@@ -8,6 +8,7 @@
   <title>우주전파센터 재난대응시스템</title>
   <link rel="stylesheet" type="text/css" href="../css/font.css">
   <link rel="stylesheet" type="text/css" href="../css/base.css">
+  <link rel="stylesheet" type="text/css" href="../css/mobile.css">
   <link rel="stylesheet" type="text/css" href="../css/main/main.css">
   <script src="../js/jquery.js"></script>
   <script src="../js/jquery-ui.min.js"></script>
@@ -22,6 +23,7 @@
   </ul>
   <!--// skip nav -->
   <div id="wrap">
+  <!-- 20220304 수정 -->
     <!-- header -->
     <div id="header">
       <div class="headerTop">
@@ -35,22 +37,68 @@
       </div>
       <div class="headerBottom">
         <div class="inner flexWrap fSb">
-          <h1><a href="#"><img src="./../images/main/img_logo.png" alt="우주전파센터 재난대응시스템"></a></h1>
+          <h1 style="margin-top:0;"><a href="#"><img src="./../images/main/img_logo.png" alt="우주전파센터 재난대응시스템"></a></h1>
           <div class="stateWrap">
-            <h2>우주전파재난 <b>위기경보</b></h2>
-            <ul class=" flexWrap">
-              <!-- 해당 li에 class name "on" 추가시 불이 켜짐 -->
-              <li class="on"><b>정상</b></li>
-              <li class="on"><b>관심</b></li>
-              <li class="on"><b>주의</b></li>
-              <li class="on"><b>경계</b></li>
-              <li class="on"><b>심각</b></li>
+            <h2>
+              <b>최초 발령 일시 : 2022-02-17 10:18:29
+                <input type="hidden" name="realImtSeCd" id="realImtSeCd" value="S">
+              </b>
+              <b><b>[모의상황]</b> 우주전파재난 <b>위기경보</b></b>
+            </h2>
+            <ul class="flexWrap">
+              <li class="on" id="D0"><b>정상</b></li>
+              <li class="" id="D1"><b>관심</b></li>
+              <li class="" id="D2"><b>주의</b></li>
+              <li class="" id="D3"><b>경계</b></li>
+              <li class="" id="D4"><b>심각</b></li>
             </ul>
           </div>
+          <a href="#" class="m_con allMenuOpen">전체메뉴 열기</a>
         </div>
       </div>
     </div>
     <!--// header -->
+
+    <!-- allMenu start -->
+    <div id="allMenuBox" tabindex="-1" class="ins_allMenuBox" style="display: none;">
+      <p class="ins_user">
+        <b>케이아이티밸리</b> 고객님 반갑습니다.
+      </p>
+      <ul class="other">
+        <li><a href="#">회원정보수정</a></li>
+        <li><a href="#">로그아웃</a></li>
+      </ul>
+      <ul class="ins_menu">
+        <li>
+          <a href="#">메뉴1</a>
+          <ul class="depth2">
+            <li><a href="#">메뉴2</a></li>
+            <li><a href="#">메뉴2</a></li>
+            <li><a href="#">메뉴2</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">메뉴1</a>
+          <ul class="depth2">
+            <li><a href="#">메뉴2</a></li>
+            <li><a href="#">메뉴2</a></li>
+            <li><a href="#">메뉴2</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">메뉴1</a>
+          <ul class="depth2">
+            <li><a href="#">메뉴2</a></li>
+            <li><a href="#">메뉴2</a></li>
+            <li><a href="#">메뉴2</a></li>
+          </ul>
+        </li>
+      </ul>
+      <a href="#" class="allMenuClose">전체메뉴 닫기</a>
+    </div>
+    <!-- allMenu end -->
+  <!--// 20220304 -->
+
     <!-- container -->
     <div id="container" class="main">
       <!-- boardBox -->
@@ -398,6 +446,9 @@
         <p>Copyright © Korean Space Weather Center. All rights reserved.</p>
       </div>
     </div>
+  <!-- 20220304 수정 -->
+    <span id="overlay" class=""></span>
+  <!--// 20220304 -->
     <!--// footer -->
 
     <!-- pop -->
@@ -578,6 +629,7 @@
     </div>
     <!--// pop -->
   </div>
+
 </body>
 
 </html>

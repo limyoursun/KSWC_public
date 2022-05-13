@@ -145,3 +145,11 @@ label.btn{width:80px;height:40px;line-height:39px;border-radius:3px;}
 .popTit h1{font-size:20px;font-weight:bold;color:#fff;letter-spacing:-2px;}
 .popCont h2{margin-bottom:7px;font-size:17px;font-weight:bold;color:#284778;letter-spacing:-0.85px;}
 .btnClose{width:17px;height:17px;background:transparent url(../images/main/icon_close_pop.png)no-repeat;border:none;}
+
+
+/* 20220222 */
+/* 상단 바로가기 구분선 */
+.headerTop .blankPage:nth-child(2):after{display:block; content:''; position:absolute; top:3px; right:-1px; width:1px; height:12px; background:#dcdcdc;}
+#allMenuBox {transition: .5s;}
+.headerBottom .allMenuOpen{ position:absolute; top:50%; right:22px; margin-top:-11px; width:22px; height:23px; text-indent:-9999px; background:url(../images/main/icon_allmenu.png) no-repeat center; }
+#allMenuBox .allMenuClose{ position:absolute; top:11px; right:-50px; width:29px; height:29px; text-indent:-9999px; background:url(../images/main/icon_allMenuClose.png) no-repeat center;}
